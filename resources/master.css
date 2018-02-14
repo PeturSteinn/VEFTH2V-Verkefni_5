@@ -1,0 +1,11 @@
+body {
+  background-color: pink;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr
+}
