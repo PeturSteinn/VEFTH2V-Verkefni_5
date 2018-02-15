@@ -9,3 +9,8 @@ body {
   grid-gap: 0;
   grid-template-columns: 1fr 1fr 1fr
 }
+
+h2 span {
+  display: list-item;
+  list-style: none;
+}

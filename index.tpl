@@ -11,7 +11,7 @@
   <section class="wrapper">
     % for event in data['results']:
     <div class="event">
-      <h2>{{event['eventDateName']}}</h2>
+      <h2><span>{{event['eventDateName']}}</span></h2>
       <h2>{{event['eventHallName']}}</h2>
       <h2>{{event['dateOfShow'][:10]}}</h2>
       <h2>{{event['dateOfShow'][11:16]}}</h2>

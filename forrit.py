@@ -14,9 +14,4 @@ def index():
 
 
 
-run()
-
-
-
-
-
+run(host="0.0.0.0", port=os.environ.get('PORT'))
