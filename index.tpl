@@ -8,13 +8,17 @@
 </head>
 
 <body>
+  <div class="top-bar">
+    <p>Fáðu miða í dag!</p>
+  </div>
   <section class="wrapper">
     % for event in data['results']:
     <div class="event">
-      <h2><span>{{event['eventDateName']}}</span></h2>
-      <h2>{{event['eventHallName']}}</h2>
-      <h2>{{event['dateOfShow'][:10]}}</h2>
-      <h2>{{event['dateOfShow'][11:16]}}</h2>
+      <div class="top">
+        <h2 class="date">{{event['eventDateName']}}</h2>
+        <h3>{{event['eventHallName']}}</h3>
+        <p>Dags. {{event['dateOfShow'][:10]}} Kl: {{event['dateOfShow'][11:16]}}</p>
+      </div>
       <img src="{{event['imageSource']}}" alt="">
     </div>
     % end
